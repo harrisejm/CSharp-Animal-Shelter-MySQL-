@@ -1,0 +1,52 @@
+<p>List of animals</p>
+
+<table>
+
+ <table>
+ <tr>
+    <th>NAME</th>
+    <th>GENDER</th>
+    <th>CHECK IN DATE</th>
+    <th>BREED</th>
+  </tr>
+  <tr>
+     <td>
+     @foreach(var dog in Model)
+     {
+     <ul>
+         <p>"@dog.GetName()"</p>
+     </ul>
+     }
+     </td>
+     <td>
+     @foreach(var dog in Model)
+         {
+         <ul>
+             <p>"@dog.GetGender()"</p>
+         </ul>
+         }
+     </td>
+     <td>
+     @foreach(var dog in Model)
+         {
+         <ul>
+             <p>"@dog.GetCheckin()"</p>
+         </ul>
+         }
+     </td>
+     <td>
+      @foreach(var dog in Model)
+         {
+         <ul>
+             <p>"@dog.GetBreed()"</p>
+         </ul>
+         }
+     </td>
+   </tr>
+
+
+ </table>
+
+
+
+</table>
